@@ -3,7 +3,7 @@ const total = document.getElementById('total-value');
 document.querySelector('textarea').addEventListener('input', function() {
   let min = max = 0;
   this.value.split('\n').forEach(function(line) {
-    const re = /(?<min>\d(\.\d)?)(-(?<max>\d(\.\d)?))?$/.exec(line);
+    const re = /(?<min>\d+(\.\d+)?)(-(?<max>\d+(\.\d+)?))?$/.exec(line);
     if (!re) {
       return;
     }
