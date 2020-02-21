@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Инструмент для подсчёта итоговых часов">
+  <title>Оценятор 5000</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="no-support" id="no-support">
+      Сорян, братух, твой арбуз не поддерживается.<br>
+      Чекай поддержку:
+      <div>
+          <a href="https://caniuse.com/#feat=mdn-javascript_builtins_regexp_named_capture_groups">Именованые группы в регулярных выражениях</a>
+      </div>
+      <div>
+          <a href="https://caniuse.com/#feat=mdn-javascript_operators_optional_chaining">Оператор опциональной последовательности</a>
+      </div>
+    </div>
+    <div class="rater-app" id="rater-app" style="display: none;">
+      <textarea placeholder="Например:
+Главная - 6-8
+Слайдер - 1-2
+Подвал - 1.5"></textarea>
+      <div class="total">Итого:
+        <span id="total-value" class="total-value">0</span>
+      </div>
+    </div>
+  </div>
+  
+  <script src="./index.js"></script>
+</body>
+</html>

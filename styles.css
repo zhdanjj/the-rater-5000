@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+}
+
+textarea {
+  width: 100%;
+  display: block;
+  min-height: 100px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.container {
+  padding-top: 20px;
+  max-width: 800px;
+  margin: auto;
+}
